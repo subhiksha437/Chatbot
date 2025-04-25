@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">T-Bot</string>
+    <string-array name="languages">
+        <item>English</item>
+        <item>Tamil</item>
+    </string-array>
+</resources>

@@ -1,0 +1,102 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF000000"
+    android:gravity="center">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/user_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFFFF"
+        android:textStyle="bold|italic"
+        android:text="No message received"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="25dp" />
+
+    <Button
+        android:id="@+id/buttonUp"
+        android:layout_width="74dp"
+        android:layout_height="62dp"
+        android:background="@android:color/transparent"
+        android:drawableEnd="@drawable/ic_arrow_u"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonLeft"
+            android:layout_width="74dp"
+            android:layout_height="62dp"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/ic_arrow_l"
+            android:textStyle="bold|italic"
+            android:layout_marginEnd="56dp" /> <!-- Added marginEnd for spacing -->
+
+        <Button
+            android:id="@+id/buttonRight"
+            android:layout_width="74dp"
+            android:layout_height="62dp"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/ic_double_r"
+            android:drawablePadding="8dp"
+            android:textStyle="bold|italic" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonDown"
+        android:layout_width="74dp"
+        android:layout_height="62dp"
+        android:background="@android:color/transparent"
+        android:drawableEnd="@drawable/ic_arrow_d"
+        android:drawablePadding="8dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/speechButton"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:background="@android:color/transparent"
+        android:text="command"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+
+
+        <TextView
+            android:id="@+id/bot_pose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bot data:\n"
+            android:textColor="#FFFFFFFF"
+            android:textStyle="bold|italic"
+            android:scrollbars="vertical"
+            android:lineSpacingExtra="4dp"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:fontFamily="monospace" />
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>
