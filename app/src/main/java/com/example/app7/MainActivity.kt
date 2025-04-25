@@ -817,7 +817,7 @@ private fun startButtonTriggeredListening() {
         try {
             generativeModel = GenerativeModel(
                 modelName = "gemini-2.0-flash",
-                apiKey = "AIzaSyDkEG8-bEE2V6qXm9Mf2m_ZiNi7_6V7qPs" // Replace with your actual API key
+                apiKey = "" // Replace with your actual API key
             )
         } catch (e: Exception) {
             Log.e(TAG, "Error in setupGeminiAI: ${e.message}", e)
